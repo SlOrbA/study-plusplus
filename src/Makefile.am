@@ -1,11 +1,11 @@
 AUTOMAKE_OPTIONS = subdir-objects
 ACLOCAL_AMFLAGS = $(ACLOCAL_FLAGS)
 
-bin_PROGRAMS = helloWorld
+bin_PROGRAMS = microServiceController
 
-helloWorld_SOURCES = main.cpp
-helloWorld_LDADD = libHelloWorld.la
+microServiceController_SOURCES = main.cpp
+microServiceController_LDADD = microServiceController.la
 
-lib_LTLIBRARIES = libHelloWorld.la
-libHelloWorld_la_LDFLAGS = -version-info 0:0:0
-libHelloWorld_la_SOURCES = helloWorld.cpp helloWorld.h
+lib_LTLIBRARIES = libMicroServiceController.la
+libMicroServiceController_la_LDFLAGS = -version-info 0:0:0
+libMicroServiceController_la_SOURCES = microServiceController.cpp microServiceController.h
