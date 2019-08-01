@@ -7,6 +7,7 @@ AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIRS([m4])
 AM_INIT_AUTOMAKE
+AC_LANG([C++])
 
 # Checks for programs.
 AC_PROG_AWK
@@ -22,7 +23,7 @@ LT_INIT
 # Checks for libraries.
 
 # Checks for header files.
-
+AC_CHECK_HEADERS([cpprest/json.h cpprest/http_listener.h iostream])
 # Checks for typedefs, structures, and compiler characteristics.
 AC_CHECK_HEADER_STDBOOL
 
